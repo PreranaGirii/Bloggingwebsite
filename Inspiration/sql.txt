@@ -1,0 +1,20 @@
+CREATE TABLE Blobs(
+    bID INT NOT NULL AUTO_INCREMENT,
+    bImage varchar(255),
+    bTitle varchar(50),
+    bsubtitle varchar(50),
+    bDescription TEXT,
+    buser varchar(50),
+    PRIMARY KEY(bID),
+);
+
+CREATE TABLE user(
+    uID int NOT NULL AUTO_INCREMENT,
+    FullName varchar(30),
+    Username varchar(19),
+    Email varchar(50),
+    Password varchar(16),
+    PRIMARY KEY(uID),
+    UNIQUE KEY(Username),
+    UNIQUE KEY(Email)
+);
